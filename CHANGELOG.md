@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 supply `--plain` flag.
 
 - Initial release, greats by name with default of "stranger"
+
 ## [1.0.0] - 2017-01-26
 ### Added
 - Initial release, greats by name with default of "stranger"
