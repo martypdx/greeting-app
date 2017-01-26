@@ -3,23 +3,23 @@ const getOptions = require('../cli/parse-options');
 
 describe('parse options', () => {
 
-    it('<name> --plain', () => {
+    it('--name:<name> --plain', () => {
         assert.deepEqual(
-            getOptions(['martha', '--plain']), 
+            getOptions(['--name:martha', '--plain']), 
             { name: 'martha', plain: true }
         );
     });
 
-    it('--plain <name>', () => {
+    it('--plain --name:<name>', () => {
         assert.deepEqual(
-            getOptions(['--plain', 'martha']), 
+            getOptions(['--plain', '--name:martha']), 
             { name: 'martha', plain: true }
         );
     });
 
-    it('<name>', () => {
+    it('--name:<name>', () => {
         assert.deepEqual(
-            getOptions(['martha']), 
+            getOptions(['--name:martha']), 
             { name: 'martha', plain: false }
         );
     });

@@ -1,23 +1,15 @@
 module.exports = function getOptions(args) {
 
-    const arg1 = args[0];
-    const arg2 = args[1];
+    const options = args.reduce((options, a) => {
+        const split = a.split(':');
+        const name = split[0].replace('--', ''); // --name
+        const value = split[1]; // martha
+        options[name] = value;
+        return options;
+    }, {});
 
-    let name = '';
-    let plain = false;
-
-    if(arg1 === '--plain') {
-        plain = true;
-        name = arg2;
-    }
-    else if(arg2 === '--plain') {
-        plain = true;
-        name = arg1;
-    }
-    else {
-        name = arg1;
-    }
-
+    const name = options.name || 'stranger';
+    const plain = options.hasOwnProperty('plain');
     return { name, plain };
 
 };
