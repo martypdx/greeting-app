@@ -1,22 +1,28 @@
 Greeting App
 ===
 
-A wonderful command line utility for greeting people.
+A wonderful command line utility for having a cow greet people!
 
 ## Use
 
-With a name parameter:
+Cowsay usage:
 
 ```
-> node greet.js martha
+> node ./lib/greet.js martha
+ ______________
+< hello martha >
+ --------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+Greeting can still be done in plain text using the `--plain` flag:
+```
+> node ./lib/greet.js martha --plain
 hello martha
-```
-
-Anonymous greeting:
-
-```
-> node greet.js
-hello stranger
 ```
 
 ## Contributing
