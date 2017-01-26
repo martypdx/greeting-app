@@ -1,5 +1,5 @@
 const assert = require('assert');
-const getOptions = require('../lib/parse-options');
+const getOptions = require('../cli/parse-options');
 
 describe('parse options', () => {
 

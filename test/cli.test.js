@@ -8,7 +8,7 @@ describe('greeting app', function() {
         it('<name> --plain', function() {
             const output = child_process.execFileSync(
                 'node',
-                ['./lib/greet.js', 'marty', '--plain'],
+                ['./cli/greet.js', 'marty', '--plain'],
                 { encoding: 'utf8' }
             );
             assert.equal(output, 'hello marty\n');
