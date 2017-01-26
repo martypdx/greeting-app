@@ -26,7 +26,7 @@ hello stranger
 1. clone this repository
 2. install and run tests:
 ```
-greeting-app> npm init
+greeting-app> npm install
 ...
 greeting-app> npm test
 ...
