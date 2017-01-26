@@ -38,6 +38,12 @@ greeting-app> npm test
 ...
 ```
 
+### Project Organziation
+
+* `cli` hosts the cli runner
+* `lib` main functionality
+* `test` unit and integration tests
+
 ### Coding Style
 
 Coding style enforced via `.eslintrc`, view for details.
