@@ -19,4 +19,9 @@ describe('make greeting', function() {
         const greeting = makeGreeting({ plain: true });
         assert.equal(greeting, 'hello stranger');
     });
+
+    it('has custom greeting', () => {
+        const greeting = makeGreeting({ greeting: 'hola', plain:true });
+        assert.equal(greeting, 'hola stranger');
+    });
 });
