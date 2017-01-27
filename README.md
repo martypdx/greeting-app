@@ -8,9 +8,9 @@ A wonderful command line utility for having a cow greet people!
 Cowsay usage:
 
 ```
-> node ./lib/greet.js martha
+> node ./lib/greet.js --greeting:hola --name:martha
  ______________
-< hello martha >
+< hola martha >
  --------------
         \   ^__^
          \  (oo)\_______
@@ -20,8 +20,9 @@ Cowsay usage:
 ```
 
 Greeting can still be done in plain text using the `--plain` flag:
+
 ```
-> node ./lib/greet.js martha --plain
+> node ./lib/greet.js --name:martha --plain
 hello martha
 ```
 

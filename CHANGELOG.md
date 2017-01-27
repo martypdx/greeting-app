@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [3.0.0] - 2017-02-16
+### Added
+- Custom greeting via `--greeting:hola` (defaults to `hello`)
+
+### BREAKING changes
+- All arguments now in --<option>:<value> format
+
 ## [2.0.0] - 2017-02-02
 ### Added
 - Greeting now uses cowsay to add fancy cow graphic
