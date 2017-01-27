@@ -8,8 +8,8 @@ module.exports = function getOptions(args) {
         return options;
     }, {});
 
-    const name = options.name || 'stranger';
-    const plain = options.hasOwnProperty('plain');
-    return { name, plain };
+    if(options.hasOwnProperty('plain')) options.plain = true;
+
+    return options;
 
 };

@@ -20,7 +20,14 @@ describe('parse options', () => {
     it('--name:<name>', () => {
         assert.deepEqual(
             getOptions(['--name:martha']), 
-            { name: 'martha', plain: false }
+            { name: 'martha' }
+        );
+    });
+
+    it('--greeting:<greeting> --name:<name>', () => {
+        assert.deepEqual(
+            getOptions(['--greeting:hola', '--name:martha']), 
+            { greeting: 'hola', name: 'martha' }
         );
     });
 });
